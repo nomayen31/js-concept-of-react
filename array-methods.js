@@ -14,4 +14,8 @@ const products = [
 // products.forEach(product => console.log(product.color));
 
 const chip = products.filter(product => product.price <= 60000)
-console.log(chip);
+// console.log(chip);
+const specificName  = products.filter(p =>p.name.includes('n'));
+// console.log(specificName);
+const special = products.find(p => p.name.includes('n'));
+console.log(special);
